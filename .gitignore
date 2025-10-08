@@ -1,4 +1,5 @@
 # Archivos y carpetas generadas por .NET
+.vs/
 bin/
 obj/
 *.user
@@ -14,7 +15,6 @@ publish/
 *.log
 
 # Configuración sensible
-config.json
 *.db
 *.bak
 
