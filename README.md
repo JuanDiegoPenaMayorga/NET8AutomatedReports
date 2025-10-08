@@ -156,6 +156,7 @@ To rebuild and publish the application:
 dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true /p:PublishTrimmed=true
 ```
 The compiled executable must be inside the /CarpetaFinalEjemplo folder.
+
 ---
 
 ## License
