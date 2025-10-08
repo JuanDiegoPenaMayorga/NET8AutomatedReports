@@ -1,0 +1,21 @@
+SELECT 
+    alias1.columna1 AS Campo1,
+    alias1.columna2 AS Campo2,
+    alias3.columna3 AS Campo3,
+    alias1.columna4 AS Campo4,
+    CONVERT(VARCHAR, alias1.columna5) AS Campo5,
+    CONVERT(VARCHAR, alias1.columna6) AS Campo6,
+    alias1.columna7 AS Campo7,
+    alias2.columna8 AS Campo8,
+    alias4.columna9 AS Campo9,
+    REPLACE(REPLACE(alias1.columna10,'5','Valor1'),'1','Valor2') AS Campo10,
+    ISNULL(CONVERT(VARCHAR, alias1.columna11),'') AS Campo11,
+    ISNULL(CONVERT(INT, alias1.columna12),0) AS Campo12
+FROM [esquema1].[dbo].[tabla1] alias1
+INNER JOIN [dbo].[tabla2] alias2 ON alias2.columnaID = alias1.columna13
+INNER JOIN [dbo].[tabla3] alias3 ON alias1.columna14 = alias3.columnaID
+INNER JOIN [dbo].[tabla4] alias4 ON alias1.columna15 = alias4.columnaID
+WHERE 
+    (CAST(alias1.columna6 AS DATE) = '{ReportDate}'
+     OR CAST(alias1.columna5 AS DATE) = '{ReportDate}')
+ORDER BY alias1.columna5 DESC;

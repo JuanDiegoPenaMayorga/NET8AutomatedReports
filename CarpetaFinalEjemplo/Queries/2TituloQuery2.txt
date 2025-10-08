@@ -1,0 +1,14 @@
+SELECT 
+    alias2.columna1 AS Campo1,
+    alias1.columna2 AS Campo2,
+    alias3.columna3 AS Campo3,
+    alias1.columna4 AS Campo4,
+    alias1.columna5 AS Campo5,
+    CONVERT(VARCHAR, alias1.columna6) AS Campo6,
+    ISNULL(CONVERT(VARCHAR, alias1.columna7), 'No especificado') AS Campo7
+FROM [esquema1].[dbo].[tabla1] alias1
+INNER JOIN [dbo].[tabla2] alias2 ON alias2.columnaID = alias1.columna8
+INNER JOIN [dbo].[tabla3] alias3 ON alias1.columna9 = alias3.columnaID
+WHERE 
+    CAST(alias1.columna6 AS DATE) = '{ReportDate}'
+ORDER BY alias2.columna1 ASC;

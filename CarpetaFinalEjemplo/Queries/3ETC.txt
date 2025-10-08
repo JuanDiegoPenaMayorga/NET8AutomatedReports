@@ -1,0 +1,33 @@
+SELECT
+    alias1.columna1 AS Campo1,
+    alias1.columna2 AS Campo2,
+    alias1.columna3 AS Campo3,
+    CASE alias1.columna4
+        WHEN 'ID_001' THEN 'Producto_A'
+        WHEN 'ID_002' THEN 'Producto_B'
+        WHEN 'ID_003' THEN 'Producto_C'
+        WHEN 'ID_004' THEN 'Producto_D'
+        WHEN 'ID_005' THEN 'Producto_E'
+        WHEN 'ID_006' THEN 'Producto_F'
+        WHEN 'ID_007' THEN 'Producto_G'
+        ELSE 'Otro'
+    END AS Campo4,
+    CASE alias1.columna5
+        WHEN 1 THEN 'Activo'
+        WHEN 5 THEN 'Resuelto'
+        WHEN 6 THEN 'Cancelado'
+        ELSE 'Otro'
+    END AS Campo5,
+    alias2.columna6 AS Campo6,
+    CONVERT(VARCHAR(10), alias2.columna7, 101) AS Campo7
+FROM [esquema1].[dbo].[tabla1] alias1
+INNER JOIN [esquema1].[dbo].[tabla2] alias2
+    ON alias1.columnaID = alias2.columnaRef
+INNER JOIN [esquema1].[dbo].[tabla3] alias3
+    ON alias2.columnaX = alias3.columnaY
+WHERE 
+    alias2.columna7 BETWEEN 
+        DATEADD(WEEK, DATEDIFF(WEEK, 0, '{ReportDate}'), 0) 
+        AND DATEADD(DAY, 4, DATEADD(WEEK, DATEDIFF(WEEK, 0, '{ReportDate}'), 0))
+    AND alias3.columna8 = 'Valor_Especifico'
+ORDER BY alias2.columna7 ASC;

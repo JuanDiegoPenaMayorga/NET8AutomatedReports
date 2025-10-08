@@ -1,0 +1,23 @@
+# Archivos y carpetas generadas por .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos de publicación
+publish/
+*.exe
+*.dll
+*.pdb
+*.log
+
+# Configuración sensible
+config.json
+*.db
+*.bak
+
+# Sistema
+Thumbs.db
+.DS_Store
