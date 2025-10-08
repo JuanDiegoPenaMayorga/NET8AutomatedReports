@@ -169,12 +169,10 @@ You are free to use, modify, and distribute it with proper attribution.
 
 ---
 
-```markdown
-
 ⭐ **Developed by [Juan Diego Peña Mayorga](https://www.linkedin.com/in/jdpm97/)**  
 📍 _Bogotá, Colombia_  
-🧠 _Focused on automation, AI and system integration._
-```
+_Focused on automation, AI and system integration._
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Juan%20Diego%20Peña-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/jdpm97/)
 [![GitHub](https://img.shields.io/badge/GitHub-JuanDiegoPenaMayorga-181717?style=for-the-badge&logo=github)](https://github.com/JuanDiegoPenaMayorga)
 [![Email](https://img.shields.io/badge/Email-JuanDiegoPena%40hotmail.com-red?style=for-the-badge&logo=gmail)](mailto:JuanDiegoPena@hotmail.com)
