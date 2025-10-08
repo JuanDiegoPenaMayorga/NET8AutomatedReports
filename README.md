@@ -21,7 +21,7 @@ Designed for teams that require daily or weekly automated reporting through a re
 
 ---
 
-## Technologies Used / Tecnologías Utilizadas
+## Technologies Used
 
 - **C# / .NET 8 (WinExe)**
 - **EPPlus** (Excel automation)
@@ -33,7 +33,7 @@ Designed for teams that require daily or weekly automated reporting through a re
 
 ---
 
-## 🗂️ Project Structure / Estructura del Proyecto
+## Project Structure
 
 ```
 NET8AutomatedReports/
@@ -65,7 +65,7 @@ NET8AutomatedReports/
 
 ---
 
-## 🔧 Configuration
+## Configuration
 
 `config.json` example:
 ```json
