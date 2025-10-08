@@ -46,6 +46,7 @@ NET8AutomatedReports/
 ├── Reflection.cs                # Handles reflection utilities
 │
 ├── CarpetaFinalEjemplo/         # Example output folder
+│   ├── Net8AutomatedReports.exe # Compiled example executable ready
 │   ├── config.json              # Configuration file with email and SQL setup
 │   ├── mail.html                # HTML email body template
 │   ├── Subject.html             # Email subject template
