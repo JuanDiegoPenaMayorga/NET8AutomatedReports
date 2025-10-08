@@ -1,0 +1,20 @@
+{
+  "SQLServer": "Servidor que aloja SQL y base de datos objetivo",
+  "SQLDBName": "Nombre de la base de datos objetivo",
+  "SQLUsername": "Usuario SQL",
+  "SQLPassword": "Password usuario SQL",
+  "OutputPath": "Carpeta de salida en donde se ejecuta esta app",
+  "SMTPServer": "mail.SMTP.net",
+  "SMTPPort": ###,
+  "SMTPUsername": "Ususario@tuSMTP.Ext",
+  "SMTPPassword": "Password del SMTP",
+  "SMTPEncryptionMode": "Seguridad del SMTP",
+  "Email": {
+    "From": "Cuenta@que.envia",
+    "To": "Cuenta@que.recibe1","Cuenta@que.recibe2"
+    "Cc": "",
+    "Bcc": ""
+  },
+  "ReportDate": "YYYY-MM-DDTHH:mm:ss", # Si la fecha no esta bien construida como este ejemplo, la app toma la actual
+  "LogEnabled": false
+}
