@@ -92,6 +92,23 @@ NET8AutomatedReports/
 
 ---
 
+## SMTP Compatibility
+
+SMTPPort	Common ports:
+• 25 – Default unencrypted (often blocked by ISPs)
+• 465 – Encrypted (SSL/TLS)
+• 587 – Encrypted (STARTTLS, recommended)
+SMTPEncryptionMode	Supported values:
+• "None" – No encryption (only if required)
+• "SSL" – Uses implicit SSL (port 465)
+• "StartTls" – Uses STARTTLS (port 587, recommended)
+• "Auto" – Automatically detects the best mode
+SMTPServer	The SMTP hostname, e.g. smtp.office365.com, smtp.gmail.com, mail.company.com
+SMTPUsername / SMTPPassword	Credentials for authentication (if required).
+
+_If SMTPEncryptionMode is set to "Auto", the system will attempt SSL/TLS first, then fallback to STARTTLS, and finally to unencrypted mode if necessary._
+---
+
 ## Usage
 
 1. Place your SQL queries in `/Queries` (use `{ReportDate}` as placeholder for filtering).
