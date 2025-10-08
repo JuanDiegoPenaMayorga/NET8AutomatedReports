@@ -94,22 +94,22 @@ NET8AutomatedReports/
 
 ## SMTP Compatibility
 
-SMTPPort	Common ports:
-- 25 – Default unencrypted (often blocked by ISPs)
-- 465 – Encrypted (SSL/TLS)
-- 587 – Encrypted (STARTTLS, recommended)
+**Common Ports:**
+- **25** – Default unencrypted (may be blocked by ISPs)
+- **465** – Implicit SSL/TLS (secure)
+- **587** – STARTTLS (recommended)
 
-SMTPEncryptionMode	Supported values:
-- "None" – No encryption (only if required)
-- "SSL" – Uses implicit SSL (port 465)
-- "StartTls" – Uses STARTTLS (port 587, recommended)
-- "Auto" – Automatically detects the best mode
+**Supported Encryption Modes (`SMTPEncryptionMode`):**
+- `"None"` – No encryption (use only if required)
+- `"SSL"` – Implicit SSL (port 465)
+- `"StartTls"` – Explicit TLS (port 587, recommended)
+- `"Auto"` – Automatically detects the best mode available
 
-SMTPServer	The SMTP hostname, e.g. smtp.office365.com, smtp.gmail.com, mail.company.com
+**Additional Notes:**
+- `SMTPServer`: Hostname (e.g. `smtp.office365.com`, `smtp.gmail.com`, `mail.company.com`)
+- `SMTPUsername` / `SMTPPassword`: Credentials used for authentication
+- When `"Auto"` is selected, the system will try **SSL/TLS → STARTTLS → None**, in that order.
 
-SMTPUsername / SMTPPassword	Credentials for authentication (if required).
-
-_If SMTPEncryptionMode is set to "Auto", the system will attempt SSL/TLS first, then fallback to STARTTLS, and finally to unencrypted mode if necessary._
 ---
 
 ## Usage
