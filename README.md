@@ -191,8 +191,8 @@ You are free to use, modify, and distribute it with proper attribution.
 
 ---
 
-⭐ **Developed by [Juan Diego Peña Mayorga](https://www.linkedin.com/in/jdpm97/)**  
-📍 _Bogotá, Colombia_  
+**Developed by [Juan Diego Peña Mayorga](https://www.linkedin.com/in/jdpm97/)**  
+_Bogotá, Colombia_  
 _Focused on automation, AI and system integration._
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Juan%20Diego%20Peña-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/jdpm97/)
