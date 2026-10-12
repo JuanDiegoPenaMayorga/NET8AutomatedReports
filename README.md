@@ -1,5 +1,10 @@
 # NET8AutomatedReports
 
+![.NET 8](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white)
+![Platform](https://img.shields.io/badge/platform-Windows-0078D6?logo=windows&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 ### Automated Reporting System in .NET 8  
 
 ---
@@ -8,6 +13,28 @@
 
 Automated report generator built with **.NET 8**, capable of executing SQL queries, exporting results to Excel, and sending them via email automatically.  
 Designed for teams that require daily or weekly automated reporting through a reliable and configurable system.
+
+---
+
+## How It Works
+
+```mermaid
+flowchart LR
+  A[config.json] --> B[SqlRunner]
+  Q[Queries/*.txt] --> B
+  B --> C[ExcelExporter]
+  C --> D[SmtpMailer]
+  D --> E[📧 Email + Excel]
+  B & C & D --> L[Serilog log]
+```
+
+---
+
+## Quick Start
+
+1. Download or clone the repo and open the `CarpetaFinalEjemplo/` folder.
+2. Edit `config.json` with your SQL Server and SMTP settings, and put your queries in `Queries/`.
+3. Run `Net8AutomatedReports.exe`. The Excel report is emailed and every step is logged in `script.log`.
 
 ---
 
@@ -197,5 +224,3 @@ _Focused on automation, AI and system integration._
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Juan%20Diego%20Peña-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/jdpm97/)
 [![GitHub](https://img.shields.io/badge/GitHub-JuanDiegoPenaMayorga-181717?style=for-the-badge&logo=github)](https://github.com/JuanDiegoPenaMayorga)
-[![Email](https://img.shields.io/badge/Email-JuanDiegoPena%40hotmail.com-red?style=for-the-badge&logo=gmail)](mailto:JuanDiegoPena@hotmail.com)
-
